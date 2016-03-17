@@ -1,0 +1,13 @@
+<meta charset=utf-8>
+<script>
+var summ=parseInt(prompt("Введите сумму вклада:"));
+var procent=parseInt(prompt("Введите процентную ставку,%:"))/100;
+var time=parseInt(prompt("Введите срок вклада, лет:"));
+var i=0;
+do {
+	summ=summ+(summ*procent);
+	i++;
+	alert("За "+i+" лет, сумма вклада составляет: "+Math.floor(summ)+" рублей")
+}
+	while (i<time);
+</script>
